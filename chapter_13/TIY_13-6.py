@@ -130,6 +130,7 @@ class SidewaysShooter:
         """checks for any keydown events"""
 
         if event.key == pygame.K_UP:
+            self.stats.game_active = True
             self.ship.moving_up = True
         if event.key == pygame.K_DOWN:
             self.ship.moving_down = True
